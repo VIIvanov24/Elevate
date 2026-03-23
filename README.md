@@ -1,10 +1,6 @@
 <h1 align="center">🚀 ELEVATE — Electronic School</h1>
 
 <p align="center">
-  <img height="280" src="images/elevate-logo.png" alt="Elevate Logo">
-</p>
-
-<p align="center">
   <b>Interactive C++ Learning Platform</b><br>
   IX Grade Project | PGKPI Burgas | 2025/2026
 </p>
