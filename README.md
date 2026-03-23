@@ -9,11 +9,6 @@
   IX Grade Project | PGKPI Burgas | 2025/2026
 </p>
 
-<p align="center">
-  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/your-username/elevate-project">
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/your-username/elevate-project">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/your-username/elevate-project">
-</p>
 
 ---
 
@@ -88,4 +83,4 @@ Students progress through lessons, solve randomized tests, and track their impro
 
 ---
 
-## 📥 Installation
+
