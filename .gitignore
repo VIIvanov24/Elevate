@@ -1,23 +1,29 @@
-# Build output - ignore everything in x64 except the dll
-x64/**/
-x64/**/*.exe
-x64/**/*.obj
-x64/**/*.pdb
-x64/**/*.ilk
-x64/**/*.log
-x64/**/*.tlog
-x64/**/*.idb
-x64/**/*.iobj
-x64/**/*.ipdb
-x64/**/*.recipe
-x64/**/*.FileListAbsolute.txt
-
-# But KEEP the raylib dll so the app can run
-!x64/**/raylib.dll
+# ── Build output ────────────────────────────────────────────
+# Ignore everything inside x64/ EXCEPT the raylib.dll needed to run
+x64/*
+!x64/
+x64/*/
+!x64/Debug/
+x64/Debug/*
+!x64/Debug/raylib.dll
 
 # Visual Studio cache
 .vs/
 
-# Other build folders
-Debug/
-Release/
+# Compiled object files and binaries
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.idb
+*.iobj
+*.ipdb
+
+# Build log files
+*.log
+*.tlog
+*.recipe
+*.FileListAbsolute.txt
+*.lastbuildstate
+*.BuildCppClean.log
+*.CppClean.log
