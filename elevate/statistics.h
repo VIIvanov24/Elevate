@@ -1,23 +1,20 @@
 #pragma once
-
-// ============================================================
-//  statistics.h
-//  Declares the student results storage and all functions
-//  related to displaying test results and statistics.
-// ============================================================
-
 #include "globals.h"
-
-// -- Results storage ------------------------------------------
-// Defined here so both test.cpp and statistics.cpp can access them.
 
 extern StudentResult results[MAX_STUDENTS];
 extern int           totalResults;
 
-// -- Function declarations ------------------------------------
+// Stores a result in the results array
+void storeResult(const StudentResult& result);
 
-// Displays the outcome of a single test to the student
-void displayTestResults(const StudentResult& result);
+// Returns average percentage across all results
+double getAverageScore();
 
-// Displays overall statistics across all stored results
-void displayStatistics();
+// Returns index of highest scoring student, or -1 if none
+int getHighestScoreIndex();
+
+// Returns index of lowest scoring student, or -1 if none
+int getLowestScoreIndex();
+
+// Returns pass rate percentage for a given category index
+double getCategoryPassRate(int categoryIndex);

@@ -5,45 +5,30 @@
 //  Project  : Elevate -- Electronic School
 //  Subject  : C++ Programming Basics
 //  Grade    : IX, 2025/2026
-//  Language : C++
+//  Language : C++ with Raylib for graphics
 // ============================================================
 
-#include <iostream>
-#include <cstdlib>   // srand
-#include <ctime>     // time
-using namespace std;
-
+#include <cstdlib>
+#include <ctime>
 #include "globals.h"
 #include "questions.h"
 #include "utils.h"
-#include "menu.h"
-#include "test.h"
-#include "statistics.h"
+#include "renderer.h"   // NEW: Raylib-based renderer
 
+// WindowShouldClose() is a Raylib function that returns true
+// when the user closes the window or presses Escape
 int main() {
-    // Seed the random number generator once at startup
-    srand((unsigned int)time(nullptr));
+    srand((unsigned int)time(nullptr));  // seed random for test generation
 
-    // Load the question bank data
-    initQuestionBank();
+    initQuestionBank();   // load all 30 questions into questionBank[]
+    initRenderer();       // NEW: open the Raylib window
 
-    bool running = true;
-    while (running) {
-        clearScreen();
-        displayMainMenu();
-
-        int choice = getValidInput(0, 4);
-        switch (choice) {
-            case 1: studyMode();         break;
-            case 2: startTest();         break;
-            case 3: displayStatistics(); break;
-            case 4: displayAbout();      break;
-            case 0:
-                cout << "\n  Goodbye!\n\n";
-                running = false;
-                break;
-        }
+    // Main game loop - Raylib runs at 60fps
+    // WindowShouldClose() returns true when user closes the window
+    while (!WindowShouldClose()) {                               // Raylib: loop condition
+        drawFrame();      // draw the current screen
     }
 
+    closeRenderer();      // NEW: clean up Raylib
     return 0;
 }

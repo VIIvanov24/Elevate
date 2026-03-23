@@ -1,0 +1,23 @@
+# Build output - ignore everything in x64 except the dll
+x64/**/
+x64/**/*.exe
+x64/**/*.obj
+x64/**/*.pdb
+x64/**/*.ilk
+x64/**/*.log
+x64/**/*.tlog
+x64/**/*.idb
+x64/**/*.iobj
+x64/**/*.ipdb
+x64/**/*.recipe
+x64/**/*.FileListAbsolute.txt
+
+# But KEEP the raylib dll so the app can run
+!x64/**/raylib.dll
+
+# Visual Studio cache
+.vs/
+
+# Other build folders
+Debug/
+Release/

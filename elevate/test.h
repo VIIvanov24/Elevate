@@ -1,21 +1,16 @@
 #pragma once
-
-// ============================================================
-//  test.h
-//  Declares functions for test generation and test taking.
-// ============================================================
-
 #include "globals.h"
 
-// Fills testIndices[] with TEST_SIZE randomly selected question
-// indices, distributed across categories according to
-// testFromCategory[].
+// Fills testIndices[] with TEST_SIZE randomly selected indices
+// distributed across categories per testFromCategory[]
 void generateTest(int* testIndices);
 
-// Presents all TEST_SIZE questions to the student and collects
-// answers. Returns a filled StudentResult.
-StudentResult takeTest(const string& studentName, int* testIndices);
+// Evaluates a single answer - returns true if correct
+// Updates the result struct in place
+bool evaluateAnswer(StudentResult& result, int questionIndex, int answerIndex);
 
-// Entry point called from the menu: asks for the student name,
-// generates a test, runs it, shows results, and stores them.
-void startTest();
+// Builds a fresh empty StudentResult for a new test session
+StudentResult createNewResult(const string& studentName);
+
+// Calculates final percentage and grade after test is complete
+void finalizeResult(StudentResult& result);
