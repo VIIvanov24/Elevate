@@ -1,85 +1,91 @@
-# ELEVATE — Electronic School
+<h1 align="center">🚀 ELEVATE — Electronic School</h1>
 
-> Interactive C++ Electronic School for C++ Programming Basics  
-> IX Grade Project | PGKPI Burgas | 2025/2026
+<p align="center">
+  <img height="280" src="images/logo.png" alt="Elevate Logo">
+</p>
 
----
+<p align="center">
+  <b>Interactive C++ Learning Platform</b><br>
+  IX Grade Project | PGKPI Burgas | 2025/2026
+</p>
 
-## About
-
-Elevate is a C++ desktop application built with **Raylib** that functions as an interactive
-Electronic School. It covers C++ Programming Basics through study mode, randomized tests,
-and detailed statistics.
-
----
-
-## Features
-
-- **Account System** — Register & login with password hashing (XOR + hex, `string` class)
-- **Study Mode** — Browse all 30 questions with correct answers per category
-- **Test Mode** — 20 randomly generated questions, graded on Bulgarian scale 2–6
-- **Statistics** — Average score, best/worst student, category performance
-- **Raylib UI** — Full graphical interface with 9 screens
+<p align="center">
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/your-username/elevate-project">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/your-username/elevate-project">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/your-username/elevate-project">
+</p>
 
 ---
 
-## C++ Concepts Used
+## 📋 Description
 
-| Concept | Where |
-|---------|-------|
-| Functions | Separate input / output / processing functions throughout |
-| Recursion | Fisher-Yates shuffle in `utils.cpp` |
-| Strings (`std::string`) | Account system, display, hashing, category matching |
-| Structs | `Question`, `StudentResult` in `globals.h` |
-| Arrays | `questionBank[30]`, `results[100]`, `categoryCorrect[3]` |
-| Bitwise (XOR) | Password hashing in `utils.cpp` — `charVal ^ (i + 7)` |
+**ELEVATE** is an interactive desktop application designed to teach the fundamentals of **C++ programming** in a structured and engaging way.
 
----
+Built using **Raylib**, the platform transforms traditional learning into an immersive experience by combining:
+- 📚 Study materials  
+- 🧠 Smart testing system  
+- 📊 Performance analytics  
 
-## Project Structure
+Students progress through lessons, solve randomized tests, and track their improvement — turning learning into a challenge-driven journey.
 
-```
-Elevate_Final_Commit/
-├── elevate.sln              ← Open this in Visual Studio
-├── .gitignore
-├── README.md
-├── docs/
-│   ├── Elevate_Documentation.docx
-│   └── Elevate_Presentation.pptx
-├── raylib/
-│   ├── include/             ← raylib.h, raymath.h, rlgl.h
-│   └── lib/                 ← raylibdll.lib, raylib.dll
-└── elevate/
-    ├── elevate.vcxproj
-    ├── main.cpp
-    ├── globals.h
-    ├── questions.h / .cpp
-    ├── accounts.h / .cpp
-    ├── utils.h / .cpp
-    ├── test.h / .cpp
-    ├── statistics.h / .cpp
-    └── renderer.h / .cpp     ← all Raylib code (commented)
-```
+> 💡 *Learn. Practice. Improve. Elevate your skills.*
 
 ---
 
-## How to Build
+## ✨ Features
 
-1. Open `elevate.sln` in **Visual Studio 2022**
-2. Select **Debug | x64**
-3. **Build → Rebuild Solution**
-4. Run with **Ctrl + F5**
+- 🔐 **Account System**  
+  Secure login & registration with password hashing (XOR + hex)
 
-> `raylib.dll` is automatically copied next to the `.exe` by a post-build step.
+- 📖 **Study Mode**  
+  Browse all 30 questions with answers by category
+
+- 📝 **Test Mode**  
+  Randomized 20-question exams with automatic grading (2–6 scale)
+
+- 📊 **Statistics Dashboard**  
+  Track average scores, top performers, and category performance
+
+- 🎨 **Graphical UI**  
+  Full interface built with **Raylib** (9 interactive screens)
 
 ---
 
-## Grading Scale
+## 🗂 Used Technologies
 
-| Grade | Threshold |
-|-------|-----------|
-| 6 (Excellent)   | >= 90% |
-| 5 (Very Good)   | >= 75% |
-| 4 (Good)        | >= 62% |
-| 3 (Average)     | >= 50% |
-| 2 (Fail)        | < 50%  |
+<p align="left">
+<a href="https://visualstudio.microsoft.com/"><img src="https://img.icons8.com/fluency/48/000000/visual-studio.png" alt="Visual Studio"/></a>
+<a href="https://code.visualstudio.com/"><img src="https://img.icons8.com/color/48/null/visual-studio-code-2019.png" alt="VS Code"/></a>
+<a href="https://www.w3schools.com/cpp/"><img src="https://img.icons8.com/color/48/c-plus-plus-logo.png" alt="C++"/></a>
+<a href="https://www.raylib.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Raylib_logo.png" alt="Raylib" width="48"/></a>
+<a href="https://git-scm.com/"><img src="https://img.icons8.com/color/48/000000/git.png" alt="Git"/></a>
+<a href="https://github.com/"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="48"/></a>
+</p>
+
+---
+
+## 🧠 C++ Concepts Used
+
+| Concept | Implementation |
+|--------|----------------|
+| Functions | Modular structure across the entire project |
+| Recursion | Fisher-Yates shuffle algorithm |
+| Strings (`std::string`) | Accounts, UI text, hashing |
+| Structs | `Question`, `StudentResult` |
+| Arrays | Question bank, results storage |
+| Bitwise Operations | XOR-based password hashing |
+
+---
+
+## 📝 Documents
+
+<h4>Project Documentation</h4>
+
+<ul>
+<li><a href="docs/Elevate_Documentation.docx">📄 Documentation</a></li>
+<li><a href="docs/Elevate_Presentation.pptx">📊 Presentation</a></li>
+</ul>
+
+---
+
+## 📥 Installation
