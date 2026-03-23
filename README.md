@@ -1,7 +1,7 @@
 <h1 align="center">🚀 ELEVATE — Electronic School</h1>
 
 <p align="center">
-  <img height="280" src="images/logo.png" alt="Elevate Logo">
+  <img height="280" src="images/elevate-logo.png" alt="Elevate Logo">
 </p>
 
 <p align="center">
@@ -9,6 +9,11 @@
   IX Grade Project | PGKPI Burgas | 2025/2026
 </p>
 
+<p align="center">
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/VIIvanov24/Elevate">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/VIIvanov24/Elevate">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/VIIvanov24/Elevate">
+</p>
 
 ---
 
@@ -82,5 +87,6 @@ Students progress through lessons, solve randomized tests, and track their impro
 </ul>
 
 ---
+
 
 
